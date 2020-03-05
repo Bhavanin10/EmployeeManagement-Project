@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1> The Student list is : </h1>
+    <table border="2px">
+      <thead>
+        <th> Student Name </th>
+        <th>Roll No</th>
+        <th> Email </th>
+        <th> Feedback </th>
+      </thead>
+      {% for student in s %}
+      <tr>
+        <td> {{student.name}}</td>
+        <td>{{student.rollno}}</td>
+        <td>{{student.email}}</td>
+        <td> {{student.feedback}}</td>
+      </tr>
+      {% endfor %}
+      </table>
+  </body>
+</html>
